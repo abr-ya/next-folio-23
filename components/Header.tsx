@@ -5,16 +5,13 @@ import { NavLinks } from "@/constant";
 import AuthProviders from "./AuthProviders";
 import Button from "./Button";
 
-// import Button from "./Button";
-// import ProfileMenu from "./ProfileMenu";
-
 const Navbar = async () => {
   const session = {
     user: true,
   };
 
   return (
-    <nav className="flexBetween navbar">
+    <header className="flexBetween navbar">
       <div className="flex-1 flexStart gap-10">
         <Link href="/">
           <Image src="/logo.svg" width={116} height={43} alt="logo" />
@@ -40,7 +37,7 @@ const Navbar = async () => {
           <AuthProviders />
         )}
       </div>
-    </nav>
+    </header>
   );
 };
 
